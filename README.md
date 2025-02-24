@@ -2,9 +2,9 @@
 This is a repository for the CxC hackathon.
 
 ## What the repository has:
-- An interactive dashboard that gives graphs and insights about the data (based on hackathon prompts)
-- Code used to clean, preprocess, and analyze the actual data
-- A report that explains the project
+- An interactive dashboard that gives graphs and insights about the data based on hackathon prompts : follow the instructions below to use it.
+- Code used to clean, preprocess, and analyze the actual data (in the Analysis Files folder)
+- A report that explains the project (the only .pdf file in the project ^^)
 
 ## How to run the project (dashboard):
 - Clone the repository, and do into the cloned directory
@@ -13,4 +13,4 @@ This is a repository for the CxC hackathon.
 - Install requirements: `pip install -r requirements.txt`
 - Run the application: `python app.py`
 
-#### Now you have your long-desired interactive dashboard!
+#### And now you have your long-desired interactive dashboard!
