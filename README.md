@@ -7,7 +7,7 @@ This is a repository for the CxC hackathon.
 - A report that explains the project
 
 ## How to run the project (dashboard):
-- Clone the repository
+- Clone the repository, and do into the cloned directory
 - Create virtual envinronment: `python -m venv venv`
 - Activate venv: `venv/Scripts/activate`
 - Install requirements: `pip install -r requirements.txt`
