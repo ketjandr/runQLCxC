@@ -20,7 +20,6 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.layout = dbc.Container([
     html.H1("Interactive Dash Board : RunQL Challenge", className='mb-4 mt-4', style={'textAlign':'center'}),
  
-    # After template ###############################################################################
     dbc.Row([
         dbc.Col([
             dcc.Dropdown(
@@ -64,8 +63,6 @@ def on_select_key_category(selected_key_category):
     return retlist, retlist[0]
 
 # toggle this function when graph_category is chosen
-# TODO: Add a dropdown to choose the graph options, 
-#       if there is only 1 option, then don't show the dropdown, and call the plot function directly
 @app.callback(
     Output(component_id='Graph Options', component_property='options'),
     Output(component_id='Graph Options', component_property='value'),
@@ -86,8 +83,7 @@ def on_select_graph_option(selected_graph_option):
     graph_option = selected_graph_option
 
 
-# toggle this function when plot button is clicked
-# TODO : Add functions to plot all options
+# toggle this function when plot button is clicked\
 @app.callback(
     Output(component_id='matplotlib', component_property='src'),
     Output('plotly', 'figure'),
