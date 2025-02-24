@@ -83,7 +83,6 @@ def plot_deal_size_grouping_over_time(data_path, options = [2022]):
     data = data.set_index(['year', 'group'])
     year_data = data.loc[year]
     year_data.reset_index(inplace=True)
-    #year_data.drop('year', axis=1, inplace=True)
     year_data = year_data.set_index('group')
     # Create the heatmap
     fig = plt.figure(figsize=(12, 6))
