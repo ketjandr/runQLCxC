@@ -44,12 +44,12 @@ def plot_deal_size_distribution(data_path, options = []):
 
     return fig_bar_matplotlib
 
-def plot_deal_vol_trends_over_time(data_path, options = []):
+def plot_deal_vol_trends_over_time(data_path, options = ['year']):
     data = pd.read_csv(data_path)
     fig = plt.figure(figsize=(10, 6))
 
     # Data for the stacked bar chart
-    categories = data["yearQuarter"]
+    categories = data[options[0]]
     values = [data["< 100k"],
                 data["100k - 1M"],
                 data["1M-5M"],
@@ -83,7 +83,7 @@ def plot_deal_size_grouping_over_time(data_path, options = [2022]):
     data = data.set_index(['year', 'group'])
     year_data = data.loc[year]
     year_data.reset_index(inplace=True)
-    year_data.drop('year', axis=1, inplace=True)
+    #year_data.drop('year', axis=1, inplace=True)
     year_data = year_data.set_index('group')
     # Create the heatmap
     fig = plt.figure(figsize=(12, 6))

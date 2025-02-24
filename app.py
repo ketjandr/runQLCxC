@@ -115,4 +115,4 @@ def plot_data(n_clicks):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug = True)

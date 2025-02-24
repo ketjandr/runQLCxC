@@ -16,8 +16,8 @@ key_areas = {
             'Default' : [plot_deal_size_distribution, 'amount_distribution_by_year.csv']
         },
         'Deal Volume Trends over Time' : {
-            'Yearly' : [plot_deal_vol_trends_over_time, 'deals_amount_group_count_by_year.csv'],
-            'Quarterly' : [plot_deal_vol_trends_over_time,'deals_amount_group_count_by_quarter.csv']
+            'Yearly' : [plot_deal_vol_trends_over_time, 'deals_amount_group_count_by_year.csv', 'year'],
+            'Quarterly' : [plot_deal_vol_trends_over_time,'deals_amount_group_count_by_quarter.csv', 'yearQuarter']
         },
         'Deal Size Grouping over Time' : {
             '2019' : [plot_deal_size_grouping_over_time, 'yearly_sector_group-amount_group_heatmap_data.csv', 2019],
